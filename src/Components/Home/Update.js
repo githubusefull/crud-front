@@ -20,7 +20,7 @@ const {id} =useParams();
     const [val, setVal] = useState("");
 
     async function getData() {
-        const data = await axios.get(`http://localhost:4000/${id}`);
+        const data = await axios.get(`https://crud-back-production.up.railway.app/${id}`);
         setVal(data.data);
         console.log(data.data);
     }
@@ -38,7 +38,7 @@ const {id} =useParams();
     }
     async function handleClick(e) {
         e.preventDefault();
-        const post = await axios.put(`http://localhost:4000/${id}`, data);
+        const post = await axios.put(`https://crud-back-production.up.railway.app/${id}`, data);
         if (!post) {
           console.log("Error");
       }

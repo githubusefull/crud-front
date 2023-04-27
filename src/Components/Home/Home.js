@@ -9,12 +9,12 @@ import { Link } from 'react-router-dom';
 const  Home = () => {
  const [val, setVal] = useState([]);
  async function getData(){
-  const data = await axios.get("http://localhost:4000");
+  const data = await axios.get("https://crud-back-production.up.railway.app/");
   setVal(data.data);
   console.log(data.data);
 }
 async function handleDelete(id) {
-  const del = await axios.delete(`http://localhost:4000/${id}`);
+  const del = await axios.delete(`https://crud-back-production.up.railway.app/${id}`);
  if(!del){
   console.log("Error");
  }else {

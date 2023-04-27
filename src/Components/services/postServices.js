@@ -11,4 +11,4 @@ class Post {
         return axios.post(url, formData, config);
     }
 }
-export default   new Post();
+export default    Post();

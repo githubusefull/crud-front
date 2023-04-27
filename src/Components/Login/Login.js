@@ -15,7 +15,7 @@ function Login() {
  }
    async function  handleClick(e) {
     e.preventDefault();
-    const post = await axios.post("http://localhost:4000/login", data);
+    const post = await axios.post("https://crud-back-production.up.railway.app/login", data);
     if(!post){
       console.log("Error");
     }

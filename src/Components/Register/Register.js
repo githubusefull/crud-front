@@ -14,7 +14,7 @@ import axios from 'axios';
  }
    async function  handleClick(e) {
     e.preventDefault();
-    const post = await axios.post("http://localhost:4000", data);
+    const post = await axios.post("https://crud-back-production.up.railway.app/", data);
     if(!post){
       console.log("Error");
     }
