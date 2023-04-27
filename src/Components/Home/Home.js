@@ -27,7 +27,7 @@ getData();
  return (
    
 <div className='container'>
-
+simo table
 <table id="customers">
   <tr>
     <th>Name</th>
