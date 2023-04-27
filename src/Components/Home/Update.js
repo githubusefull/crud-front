@@ -7,7 +7,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 const Update = () => {
     const initial = {name:"", phone:"", email:"", password:"", confirmpassword:"" };
     const [data, setData] = useState(initial);
-    const {name, phone, email, password, confirmpassword} = data;
+
 const {id} =useParams();
 
    function handleChange  (e) {
@@ -26,7 +26,7 @@ const {id} =useParams();
     }
     useEffect(() => {
         getData();
-    },[]);
+    });
     const [errors, setErrors] = useState({});
 
     function Validation({values}){

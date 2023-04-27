@@ -3,7 +3,7 @@ import axios from 'axios';
 import {BsTrash} from 'react-icons/bs';
 import {FiEdit} from 'react-icons/fi';
 import '../crud/Crud.css';
-import { Link, useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 const  Home = () => {
@@ -52,7 +52,7 @@ simo table
     <Link to={`/update/${register._id}`}>
             <span><FiEdit className='icon-edite1'/></span>
             </Link>
-      <a href=''><BsTrash className='icon-edite2'onClick={()=>handleDelete(register._id)}/></a>
+      <a href='*'><BsTrash className='icon-edite2'onClick={()=>handleDelete(register._id)}/></a>
 
       </td>
 
